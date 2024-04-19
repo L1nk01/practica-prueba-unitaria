@@ -17,10 +17,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        test -e requirements.txt && echo "requirements.txt found" || echo "requirements.txt not found"
-
+        
     - name: Run unit tests
       run: python -m unittest calculadora_test.py
