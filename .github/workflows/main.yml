@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # Elige la versión de Python que estás utilizando
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
@@ -25,5 +25,3 @@ jobs:
 
     - name: Run unit tests
       run: python -m unittest calculadora_test.py
-
-Con esta configuración, las pruebas unitarias se ejecutarán cada vez que haya un pull request dirigido a la rama main. Esto permite que las pruebas se ejecuten antes de que se realice el merge a la rama principal, lo que garantiza que el código integrado en main cumpla con las pruebas definidas.
