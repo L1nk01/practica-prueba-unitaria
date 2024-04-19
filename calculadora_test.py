@@ -17,5 +17,8 @@ class TestCalculadora(unittest.TestCase):
     def test_division(self):
         self.assertEqual(self.calculadora.division(10, 2), 5.0)
 
+    def test_raiz_cuadrada(self):
+        self.assertEqual(self.calculadora.raiz_cuadrada(9), 3)
+
 if __name__ == '__main__':
     unittest.main()
